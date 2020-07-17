@@ -171,10 +171,10 @@ h1.footer-title {
 /*ANIMATIONS*/
 
 .fadeIn{
-	animation: fadeIn ease 5s;
-	-webkit-animation: fadeIn ease 5s;
-	-moz-animation: fadeIn ease 5s;
-	-ms-animation: fadeIn ease 5s;
+	animation: fadeIn ease 3s;
+	-webkit-animation: fadeIn ease 3s;
+	-moz-animation: fadeIn ease 3s;
+	-ms-animation: fadeIn ease 3s;
 }
 
 @keyframes fadeIn{
