@@ -19,7 +19,7 @@
               <h1 class="title fadeIn">A smarter way to keep your home safe and secure</h1>
               <div class="sub-head">Permanently lockdown all entry points to your space, record videos, capture image bursts and send real-time alerts when unidentified motion or audio is detected in your space.</div>
               <div class="lead">
-                <form name="hometrap" action="" method="post" data-netlify="true">
+                <form name="hometrap" action="" id="ht-form" method="post" data-netlify="true">
                     <input type="email" name="email" placeholder="Enter your email address" required>
                     <button type="submit" name="submit" class="email-entry">Join waitlist</button>
                 </form>
@@ -115,7 +115,7 @@
           <h1 class="footer-title">Signup now to gain early access</h1>
           <div class="sub-foot">Be the first to know when we launch</div>
           <div class="lead">
-            <form name="hometrap-foot" action="" method="post" data-netlify="true">
+            <form name="hometrap-foot" id="ht-form" action="my-form" method="post" data-netlify="true">
                 <input type="email" name="email" placeholder="Enter your email address" required>
                 <button type="submit" name="submit" class="email-entry">Join waitlist</button>
             </form>
@@ -141,12 +141,12 @@
   </script>
 
   <script>
-    $("#my-form").submit(function(e) {
+    $("#ht-form").submit(function(e) {
   e.preventDefault();
 
   var $form = $(this);
   $.post($form.attr("action"), $form.serialize()).then(function() {
-    alert("Thank you! You will be notified as soon as we launch");
+    alert("Successful! You will be notified as soon as we launch");
   });
 });
   </script>
