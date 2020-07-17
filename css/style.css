@@ -492,6 +492,13 @@ p {
 
 
 @media (max-width: 640px) {
+  .twist {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-col {order: 2;}
+  .right-col {order: 1;}
+
   .screens {
     margin: 20px 0 10px 0;
   }
@@ -517,6 +524,13 @@ p {
 }
 
 @media (max-width: 800px) {
+  .twist {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-col {order: 2;}
+  .right-col {order: 1;}
+  
   .screens {
     margin: 20px 0 10px 0;
   }
